@@ -1,6 +1,6 @@
 # Книжный магазин
 
-## Функционал сайта
+# Функционал сайта
 
 - Авторизация
 - Личный кабинет пользователя
@@ -24,8 +24,6 @@
 
 # Стек проекта
 
-###
-
 <p>
   <img alt="HTML5" src="https://img.shields.io/badge/-HTML-yellow?style=for-the-badge&logo=HTML5&logoColor=orange" />
   <img alt="CSS" src="https://img.shields.io/badge/-CSS-blue?style=for-the-badge&logo=HTML5&logoColor=white" />
@@ -45,4 +43,36 @@
   <img alt="JWT" src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens" />
   <img alt="Figma" src="https://img.shields.io/badge/-Figma-rgb(242, 78, 30)?style=for-the-badge&logo=figma&logoColor=white" />
 </p>
+
+# Команда проекта
+
+<h3>
+  <a href="https://github.com/Sa1tama54">
+    <img alt="Tutaev" src="https://img.shields.io/badge/-Suleiman_Tutaev-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+
+<h3>
+  <a href="https://github.com/Idrisibl">
+    <img alt="Iblaev" src="https://img.shields.io/badge/-Idris_Iblaev-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+
+<h3>
+  <a href="https://github.com/taborleen">
+    <img alt="Edilov" src="https://img.shields.io/badge/-Emir_Edilov-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+
+<h3>
+  <a href="https://github.com/M4nsur">
+    <img alt="Vakhabov" src="https://img.shields.io/badge/-Mansur_Vakhabov-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+
+<h3>
+  <a href="https://github.com/nohcho">
+    <img alt="Tasuhanov" src="https://img.shields.io/badge/-Muhammad_Tasuhanov-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
