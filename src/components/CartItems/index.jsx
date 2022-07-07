@@ -5,8 +5,10 @@ import { FaShoppingCart } from "react-icons/fa";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { editBookmarks, removeBookmark } from "../../features/usersSlice";
-import {postBookToBasket, fetchGetBasketBooks} from "../../features/basketSlice"
+import {
+  postBookToBasket,
+  fetchGetBasketBooks,
+} from "../../features/basketSlice";
 import {
   editBookmarks,
   fetchOneUser,
@@ -19,20 +21,19 @@ const CartItems = ({ book }) => {
   const user = useSelector((state) => state.auth.userAuth);
   const id = useSelector((state) => state.auth.user);
   const dispatch = useDispatch();
-  const userId = useSelector((state) => state.auth.user)
+  const userId = useSelector((state) => state.auth.user);
 
-useEffect(() => {
-  dispatch(fetchGetBasketBooks())
-}, [dispatch])
- const basket = useSelector((state) => state.basketBookSlice.basket)
-  let basketId
- const basketUser = basket.map((item)=> {
-  if(item.userId === userId){
-    basketId = item._id
-  }
-  return basketId
-})
- 
+  useEffect(() => {
+    dispatch(fetchGetBasketBooks());
+  }, [dispatch]);
+  const basket = useSelector((state) => state.basketBookSlice.basket);
+  let basketId;
+  const basketUser = basket.map((item) => {
+    if (item.userId === userId) {
+      basketId = item._id;
+    }
+    return basketId;
+  });
 
   const checkedBook = user.hasOwnProperty("bookmarks")
     ? user.bookmarks.find((item) => item === bookId)
@@ -42,10 +43,9 @@ useEffect(() => {
     dispatch(editBookmarks({ bookId }));
   };
 
-
   const bookShop = (bookId) => {
-    dispatch(postBookToBasket({basketId, bookId}))
-  }
+    dispatch(postBookToBasket({ basketId, bookId }));
+  };
 
   const removeFromBookmarks = () => {
     dispatch(removeBookmark({ bookId }));
@@ -84,7 +84,10 @@ useEffect(() => {
             ) : (
               <span className={styles.price}>{book.price}₽</span>
             )}
-            <button onClick={() => bookShop(book._id, newPrice)} className={styles.btn}>
+            <button
+              onClick={() => bookShop(book._id, newPrice)}
+              className={styles.btn}
+            >
               <span>Купить</span>
               <FaShoppingCart />
             </button>
